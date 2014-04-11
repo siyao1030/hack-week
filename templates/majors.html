@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Majors</title>
+  <link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+
+</head>
+<body>
+  <ul>
+    {% for major in majors %}
+    <li><a href="/major/{{major}}">{{major}}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

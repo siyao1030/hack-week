@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chosen/chosen.css') }}">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:300,500,700">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{{ url_for('index') }}">5C Course Reviews</a>
+        </div>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+  </div>
+</body>
+{% block scripts %}
+{% endblock %}
+</html>

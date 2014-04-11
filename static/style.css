@@ -1,0 +1,25 @@
+body {
+    padding-top: 20px;
+}
+
+.school {
+    width: 15em;
+}
+
+.major {
+    width: 15em;
+}
+
+.search-box {
+  text-align: center;
+}
+
+.chzn-results {
+  text-align: left;
+}
+
+input, textarea {
+    display: block;
+    height: auto;
+    font-family: inherit;
+}
